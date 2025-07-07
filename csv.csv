@@ -1,0 +1,32 @@
+Name	Efficacy	MinAge	MaxAge	PregnancySafe	AlcoholSafe	Interactions
+Tylenol	Headache;Toothache;Sore throat;Fever	12	99	1	1	Ibuprofen;Aspirin;Naproxen
+Ibuprofen	Muscle pain;Menstrual pain;Joint pain;Headache	18	99	0	0	Tylenol;Aspirin;Naproxen
+Aspirin	Headache;Joint pain;Inflammation	16	99	0	0	Tylenol;Ibuprofen;Warfarin
+Naproxen	Muscle pain;Menstrual pain;Back pain;Joint pain	12	99	1	1	Ibuprofen;Tylenol;Celecoxib
+Celecoxib	Joint pain;Back pain;Inflammation	18	99	1	1	Naproxen;Ibuprofen
+Tramadol	Severe pain;Muscle pain;Back pain	18	99	0	0	Morphine;Oxycodone
+Morphine	Severe pain;Joint pain;Cancer pain	18	99	0	0	Tramadol;Oxycodone
+Oxycodone	Severe pain;Back pain;Nerve pain	18	99	0	0	Tramadol;Morphine
+Pantoprazole	Stomach pain;Heartburn;Indigestion	18	99	1	1	Omeprazole;Lansoprazole
+Omeprazole	Stomach pain;Heartburn;Stomach ulcer	18	99	1	1	Pantoprazole;Lansoprazole
+Lansoprazole	Stomach pain;Heartburn;GERD	18	99	1	1	Pantoprazole;Omeprazole
+Loperamide	Diarrhea;Stomach pain	6	99	1	1	Bismuth subsalicylate
+Bismuth subsalicylate	Diarrhea;Stomach pain;Indigestion	6	99	1	1	Loperamide
+Amoxicillin	Toothache;Sore throat;Ear pain	0	99	1	1	Ceftriaxone;Penicillin
+Ceftriaxone	Toothache;Sore throat;Sinus pain	0	99	1	1	Amoxicillin;Penicillin
+Penicillin	Sore throat;Ear pain;Infection	0	99	1	1	Amoxicillin;Ceftriaxone
+Pancol	Sore throat;Headache;Cough	12	99	1	1	Tylenol;Whytussin
+Whytussin	Sore throat;Headache;Runny nose	12	99	1	1	Pancol;Panpyrin
+Panpyrin	Cough;Fever;Headache	12	99	1	1	Whytussin;Tylenol
+Zyrtec	Allergy;Rhinitis;Itching	6	99	1	1	Allegra;Loratadine
+Allegra	Allergy;Rhinitis;Sneezing	12	99	1	1	Zyrtec;Loratadine
+Loratadine	Allergy;Itching;Rhinitis	2	99	1	1	Zyrtec;Allegra
+Diazepam	Anxiety;Muscle spasm;Seizure	18	99	0	0	Alprazolam;Lorazepam
+Alprazolam	Anxiety;Tension;Insomnia	18	99	0	0	Diazepam;Lorazepam
+Lorazepam	Anxiety;Insomnia;Seizure	18	99	0	0	Diazepam;Alprazolam
+Salbutamol	Asthma;Shortness of breath;Chest pain	6	99	1	1	Ipratropium
+Ipratropium	Asthma;Shortness of breath;COPD	12	99	1	1	Salbutamol
+Warfarin	Thrombosis prevention;Chest pain	18	99	0	0	Aspirin;Ibuprofen
+Metformin	High blood sugar;Stomach pain	18	99	1	1	Glimepiride
+Glimepiride	High blood sugar;Fatigue	18	99	1	1	Metfdormin
+Examsample	High blood sugar	10	99	0	0	Tylenol
